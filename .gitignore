@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+playwright/.cache/
+playwright/.auth/
+allure-results/
+allure-report/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
