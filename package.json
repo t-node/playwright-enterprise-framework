@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "practice:01": "npx tsx src/practice/01-variables-and-types.ts",
+    "practice:02": "npx tsx src/practice/02-functions.ts",
+    "practice:03": "npx tsx src/practice/03-interfaces-and-types.ts",
+    "practice:04": "npx tsx src/practice/04-classes.ts",
+    "practice:05": "npx tsx src/practice/05-destructuring-and-spread.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
