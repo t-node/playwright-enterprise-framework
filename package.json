@@ -10,6 +10,9 @@
     "practice:03": "npx tsx src/practice/03-interfaces-and-types.ts",
     "practice:04": "npx tsx src/practice/04-classes.ts",
     "practice:05": "npx tsx src/practice/05-destructuring-and-spread.ts",
+    "practice:06": "npx tsx src/practice/06-promises.ts",
+    "practice:07": "npx tsx src/practice/07-modules-main.ts",
+    "practice:08": "npx tsx src/practice/09-find-the-bugs.ts",
     "build": "tsc",
     "typecheck": "tsc --noEmit"
   },
