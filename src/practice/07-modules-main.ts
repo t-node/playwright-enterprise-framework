@@ -1,6 +1,6 @@
 import Logger, { LogLevel } from "./modules/logger.js";
 import TestDataFactory from "./modules/test-data.js";
-import { ALLUSERS, DEV_ENV, STAN_USER } from "./modules/test-data.ts";
+import { ALL_USERS, DEV_ENV, STANDARD_USER } from "./modules/test-data.ts";
 import {
   BrowserType,
   SUPPORTED_BROWSERS,
@@ -12,12 +12,12 @@ const main = async (): Promise<void> => {
   const logger = Logger.getInstance(LogLevel.DEBUG);
   logger.info("===Day 2 Module Exercise===");
   logger.step("Using TestUser Interface");
-  const user: TestUser = STAN_USER;
+  const user: TestUser = STANDARD_USER;
   console.log(
     `User: ${user.username}, Role: ${user.role}, Password: ${user.password}`,
   );
   logger.step("Listing all test users");
-  ALLUSERS.forEach((u) => {
+  ALL_USERS.forEach((u) => {
     const icon = u.expectedOutcome === "success" ? "true" : "false";
     console.log(
       `  ${icon} ${u.username} (${u.role}) → expects ${u.expectedOutcome}`,
@@ -31,7 +31,7 @@ const main = async (): Promise<void> => {
     role: "admin",
   });
 
-  const errorUsers = TestDataFactory.getUsersbyoutcome("success");
+  const errorUsers = TestDataFactory.getUsersByOutcome("success");
   console.log(
     `  Users expecting errors: ${errorUsers.map((u) => u.username).join(",")}`,
   );
