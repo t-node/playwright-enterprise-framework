@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node"],
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -8,13 +9,13 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src",
     "resolveJsonModule": true,
     "declaration": true,
     "sourceMap": true,
     "allowImportingTsExtensions": true,
+    "inlineSources": true,
     "noEmit": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/**/*", "playwright.config.ts"],
   "exclude": ["node_modules", "dist"]
 }
